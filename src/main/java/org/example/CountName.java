@@ -23,7 +23,10 @@ public class CountName {
         List<String> list= Arrays.asList("Sujeet","Harsh","Sujeet","Jyoti");
         getData(new ArrayList<>(list));
 
-        Map<String,Long> countElement=list.stream().collect(Collectors.groupingBy(x->x,Collectors.counting()));
+        Map<String,Long> countElement=list.stream()
+                .collect(Collectors
+                        .groupingBy(x->x,Collectors
+                                .counting()));
 
         System.out.println("***********************************");
         System.out.println("Result====> " + countElement);

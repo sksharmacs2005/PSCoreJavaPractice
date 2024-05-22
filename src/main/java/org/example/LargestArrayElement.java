@@ -2,7 +2,7 @@ package org.example;
 
 public class LargestArrayElement {
     public static void main(String[] args) {
-        int arr[]={1,2,3,5,7,7};
+        int arr[]={1,2,3,5,10,7,7};
         int largest = getLargest(arr);
         System.out.println(largest);
     }

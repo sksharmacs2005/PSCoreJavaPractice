@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class CountName {
-    private static void getData(ArrayList<String> list)
+    private static void getData(List<String> list)
     {
         Map<String,Integer> map=new HashMap<>();
         for(String i:list)
@@ -21,7 +21,7 @@ public class CountName {
 
     public static void main(String[] args) {
         List<String> list= Arrays.asList("Sujeet","Harsh","Sujeet","Jyoti");
-        getData(new ArrayList<>(list));
+        getData(list);
 
         Map<String,Long> countElement=list.stream()
                 .collect(Collectors

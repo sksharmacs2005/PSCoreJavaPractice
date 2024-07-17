@@ -5,6 +5,7 @@ public class FibonacciSeries {
 
         int num=10;
         printFibonaicciSeries(num);
+        System.out.println(" Series " + fibonacci( num));
 
     }
 
@@ -24,7 +25,7 @@ public class FibonacciSeries {
     }
     //Recursive using
     public static int fibonacci(int position) {
-        System.out.print(".");
+        //System.out.print(".");
         if (position == 1) {
             return 0;
         }

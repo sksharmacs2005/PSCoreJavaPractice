@@ -22,8 +22,9 @@ public class ImmutableListExample {
 
         //After making ArrayList immutable class add somting
 
+        System.out.println("After Immutable class");
         immutableList.add("newElement");
 
-        System.out.println("After Immutable class");
+
     }
 }

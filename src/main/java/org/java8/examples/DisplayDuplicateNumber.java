@@ -17,10 +17,10 @@ public class DisplayDuplicateNumber {
 
         List<Integer> evenNumbers = numbers.stream().filter(num -> num % 2 == 0).distinct().collect(Collectors.toList());
 
-        System.out.println(evenNumbers);
+       // System.out.println(evenNumbers);
 
         List<Integer> oddNumbers = numbers.stream().filter(num -> num % 2 != 0).distinct().collect(Collectors.toList());
-        System.out.println(oddNumbers);
+        //System.out.println(oddNumbers);
 
         List<Integer> list=Arrays.asList(10,40,30);
         Integer i = list.stream().sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
